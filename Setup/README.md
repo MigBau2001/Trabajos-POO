@@ -3,7 +3,7 @@
 
 # Instalación de dotnet core 2.2
 
-Primero lo descargas
+
 
 
 # Instalación y configuración de Visual Studio Code para C#
