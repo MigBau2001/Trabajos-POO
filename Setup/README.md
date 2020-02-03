@@ -16,11 +16,20 @@ Una vez descargado, lo siguiente es instalarlo. Para eso, abrimos el archivo des
 
 ![Ss1](images/Ss1.png)
 
+Ahora, se procede a instalar Visual Studio Code
+
+![Ss2](images/Ss2.png)
+
+
 y "Finalizar".
 
+![Ss3](images/Ss3.png)
 
 
 Lo siguiente es configurar para C#, para esto, descargamos la extensión de C# dentro de visual studio code.
+
+![Ss4](images/Ss4.png)
+
 
 # Instalación de git, conectado a tu cuenta de GitHub y VSC
 
