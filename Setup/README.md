@@ -6,15 +6,15 @@
 Lo primero que tenemos que hacer
 es bajar el archivo de instalación del siguiente [link](https://dotnet.microsoft.com/download/dotnet-core/2.2) dependiendo de nuestra computadora, en mi caso, elegiré la versión de 64 bits.
 
-![ImagenArchivo](images/dotnetcore64bits)
+![ImagenArchivo](images/dotnetcore64bits.png)
 
 Ejecutamos el archivo de instalación e instalamos Dotnet core 2.2
 
-![ImagenInstalar](images/InstallingNetCore)
+![ImagenInstalar](images/InstallingNetCore.png)
 
 Listo, se ha instalado dotnet core 2.2 en la computadora, se da click en cerrar para finalizar la instalación.
 
-![ImagenCerrar](images/SuccessfullInstalled)
+![ImagenCerrar](images/SuccessfullInstalled.png)
 
 
 # Instalación y configuración de Visual Studio Code para C#
