@@ -14,6 +14,7 @@ Para instalar Visual Studio Code tenemos que ir al siguiente [link](https://code
 
 Una vez descargado, lo siguiente es instalarlo. Para eso, abrimos el archivo descargado y damos en "Aceptar" a todo 
 
+![Ss1](images/Ss1.png)
 
 y "Finalizar".
 
