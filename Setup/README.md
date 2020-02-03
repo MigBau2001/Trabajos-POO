@@ -8,9 +8,6 @@ es bajar el archivo de instalación del siguiente [link](https://dotnet.microsof
 
 
 
-
-
-
 # Instalación y configuración de Visual Studio Code para C#
 
 Para instalar Visual Studio Code tenemos que ir al siguiente [link](https://code.visualstudio.com/) y descargar el archivo 
