@@ -47,15 +47,15 @@ Abrimos el archivo de instalación y procedemos a dar "Next" hasta finalizar el 
 
 Ahora se configurará git con github, para eso, se abre git bash, la interfaz se ve algo así
 
-![Bash](images/)
+![Bash](images/Bash.png)
 
 Una vez aquí, se escribe el siguiente comando (En mi caso puse mi correo electrónico)
 
-![Email](images/)
+![Email](images/Email.png)
 
 Siguiente, configurar el nombre de usuario
 
-![Username](images/)
+![Username](images/Username.png)
 
 Con esto, hemos configurado git para github.
 
