@@ -45,6 +45,19 @@ Lo siguiente es configurar para C#, para esto, descargamos la extensión de C# d
 Primeramente deberemos ir a la pagina de [Git](https://git-scm.com/) para su descarga.
 Abrimos el archivo de instalación y procedemos a dar "Next" hasta finalizar el proceso.
 
+Ahora se configurará git con github, para eso, se abre git bash, la interfaz se ve algo así
+
+![Bash](images/)
+
+Una vez aquí, se escribe el siguiente comando (En mi caso puse mi correo electrónico)
+
+![Email](images/)
+
+Siguiente, configurar el nombre de usuario
+
+![Username](images/)
+
+Con esto, hemos configurado git para github.
 
 
 
