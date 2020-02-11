@@ -29,6 +29,22 @@ namespace pelicula
         {
             return año;
         }
+
+        public Pelicula()
+        {
+
+        }
+
+        public Pelicula(string titulo, Int16 año)
+        { 
+            this.titulo = titulo;
+            this.año = año;
+        }
+
+        public void Imprime()
+        {
+            Console.WriteLine("{0}({1})", titulo, año);
+        }
     }
     class Program
     {
