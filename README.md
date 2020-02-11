@@ -5,5 +5,7 @@ Nombre: Bautista Domínguez Miguel Ángel 19211599
 Semestre: Segundo   
 
 [Actividad 1](./Setup/README.md)
+[Actividad 1](./pelicula/Program.cs)
+
 
 
