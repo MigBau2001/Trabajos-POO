@@ -66,6 +66,18 @@ namespace pelicula
             Console.WriteLine("");
             Console.WriteLine("{0}({1})", peli2.getTitulo(), peli2.getAño());
 
+            List <Pelicula> peliculas = new List<Pelicula>();
+            peliculas.add("Roma", 2018);
+            peliculas.add("Kung Fu Panda", 2008);
+            peliculas.add("Black Panther", 2018);
+            peliculas.add("Spider man 2", 2004);
+            peliculas.add("50 sombras de Grey", 2015);
+
+            foreach(Peliculas a in peliculas);
+
+            
+
+
         }
     }
 }
