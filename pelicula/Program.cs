@@ -4,12 +4,27 @@ using System.Collections.Generic;
 namespace pelicula
 {
 
+    class Actor // Clase de la cual haremos la lista de actores
+    {
+       public string nombreActor; // Hacer privado y hacer metodos de set y get
+        int año;
+
+        public Actor(string nom, int año1)
+        {
+            nombreActor = nom;
+            año = año1;
+        }
+
+        
+    }
+
     class Pelicula
     {
         private string titulo;
         private Int16 año;
         public string pais;
         public string director;
+        List <Actor> Actores =  new List<Actor>();
 
         public Pelicula(string titulo, Int16 año)
         { 
@@ -41,7 +56,21 @@ namespace pelicula
             Console.WriteLine("{0}({1})", titulo, año);
             
         }
+
+        public void AgregarActor(Actor actor)
+        {
+            Actores.Add(actor);
+        }
+
+
+        public void ImprimeActores()
+        {
+            foreach (Actor a in Actores)
+            Console.WriteLine(a.nombreActor);
+        }
     }
+
+
     class Program
     {
         static void Main(string[] args)
@@ -72,6 +101,17 @@ namespace pelicula
 
             foreach(Pelicula a in peliculas)
             a.Imprime();
+
+            Pelicula Sonic = new Pelicula("Sonic", 2020);
+           
+            Sonic.AgregarActor(new Actor("Jim carrey", 1962));
+            Sonic.AgregarActor(new Actor("James Marsden", 1973));
+            Sonic.AgregarActor(new Actor("Jim carrey", 1981));
+            Sonic.AgregarActor(new Actor("Jim carrey", 1966));
+
+            Sonic.ImprimeActores();
+
+
 
 
         }
