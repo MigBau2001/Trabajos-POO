@@ -6,15 +6,35 @@ namespace pelicula
 
     class Actor // Clase de la cual haremos la lista de actores
     {
-       public string nombreActor; // Hacer privado y hacer metodos de set y get
-        int año;
+       private string nombreActor;
+        private int año;
 
-        public Actor(string nom, int año1)
+        public Actor(string nom, int año1) // Constructor de la clase
         {
             nombreActor = nom;
             año = año1;
         }
 
+        // Metodos set y get de los atributos de la clase.
+        public void setNombreActor(string nombreA) 
+        {
+            nombreActor = nombreA;
+        }
+
+        public string getNombreActor()
+        {
+            return nombreActor;
+        }
+
+        public void setAñoActor(int año)
+        {
+            this.año = año;
+        }
+
+        public int getAñoActor()
+        {
+            return año;
+        }
         
     }
 
@@ -66,7 +86,7 @@ namespace pelicula
         public void ImprimeActores()
         {
             foreach (Actor a in Actores)
-            Console.WriteLine(a.nombreActor);
+            Console.WriteLine(a.getNombreActor() + "(" + a.getAñoActor() + ")");
         }
     }
 
@@ -102,12 +122,14 @@ namespace pelicula
             foreach(Pelicula a in peliculas)
             a.Imprime();
 
+            Console.WriteLine();
+            // implementación de actividad ACTORES
             Pelicula Sonic = new Pelicula("Sonic", 2020);
            
             Sonic.AgregarActor(new Actor("Jim carrey", 1962));
             Sonic.AgregarActor(new Actor("James Marsden", 1973));
-            Sonic.AgregarActor(new Actor("Jim carrey", 1981));
-            Sonic.AgregarActor(new Actor("Jim carrey", 1966));
+            Sonic.AgregarActor(new Actor("Ben Schwartz", 1981));
+            Sonic.AgregarActor(new Actor("Neal McDonough", 1966));
 
             Sonic.ImprimeActores();
 
