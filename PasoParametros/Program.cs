@@ -34,11 +34,13 @@ class ConvertidorAlCuadrado
     {
         static void Main(string[] args)
         {
-           // Ejemplificación con ref
+            // Paso de parametro por valor.
             ConvertidorAlCuadrado convertidor = new ConvertidorAlCuadrado();
             int num = 3;
             convertidor.Cuadrado(num);
             Console.WriteLine("Valor de a: " + num);
+            
+           // Ejemplificación con ref
             convertidor.Cuadrado_ref(ref num);
             Console.WriteLine("Valor de a: " + num);
             
