@@ -8,5 +8,9 @@ Semestre: Segundo
 
 [Actividad 2](./pelicula/Program.cs)
 
+[Actividad 3](./UML/README.md)
+
+[Actividad 4](./PasoParametros/Program.cs)
+
 
 
