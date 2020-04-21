@@ -27,7 +27,7 @@ class ConvertidorAlCuadrado
 
     public void Cuadrado_in(in int num)
     {
-        num = num*num;
+        //num = num*num; -> num no se puede modificar pues es read-only
     }
 }
     class Program
