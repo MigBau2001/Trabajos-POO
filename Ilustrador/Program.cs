@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Ilustrador
 {
-   class Figura 
+    abstract class Figura  // Se puede pensar como un template para las subclases que hereden de esta base
     {
         protected int x;
         protected int y;
@@ -13,15 +13,9 @@ namespace Ilustrador
             this.x = x; this.y = y; color = c;
         }
 
-        public virtual void dibuja()
-        {
-            Console.WriteLine("Se dibuja una figura color {0}", 
-            color);
-        }
+       public abstract void dibuja();
 
-        public void printColor() {
-            Console.WriteLine(color);
-        }
+        public abstract void printColor();
     }
 
     class Circulo : Figura {
@@ -29,14 +23,29 @@ namespace Ilustrador
         }
 
         public override void dibuja(){
-            Console.WriteLine("Se dibuja un circulo {0}", color);
+            Console.WriteLine("Se dibuja un circulo en coordenadas ({0},{1})", x,y);
+        }
+
+        public override void printColor()
+        {
+            Console.WriteLine("El color del circulo es: " + color);
         }
     }
 
     class Rect : Figura {
         public Rect(int x, int y, string c):base(x , y, c){
             }
+
+        public override void dibuja()
+        {
+            Console.WriteLine("Se dibuja un rectangulo en coordenadas ({0},{1})", x,y);
         }
+
+        public override void printColor()
+        {
+            Console.WriteLine("El color del rectangulo es: " + color);
+        }
+    }
     class Program{
         static void Main(string[] args){
             List<Figura> figuras = new List<Figura>();
@@ -46,6 +55,7 @@ namespace Ilustrador
             figuras.Add(new Circulo(12,13,"rojo"));
             foreach (var item in figuras){
                 item.dibuja();
+                item.printColor();
             }    
             Circulo r = new Circulo(10,10,"rojo");   
             r.dibuja();
